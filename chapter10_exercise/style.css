@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 以下ヘッダーレイアウト */
+header {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+/* 以下メインコンテンツレイアウト */
+main {
+  width: 100%;
+  justify-content: center;
+  margin: 50px auto;
+  display: flex;
+}
+
+/* メイン→ステップコンテンツレイアウト */
+.step-box {
+  width: 300px;
+  margin-right: 30px;
+  margin: 0 10px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
+}
+
+/* step1画像サイズ */
+.step-img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* step2画像サイズ */
+.step-img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* step3画像サイズ */
+.step-img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* Stepコンテンツ内テキスト設定 */
+.step-num {
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
+
+.title {
+  margin: 15px 0 5px;
+}
+
+/* 以下フッター設定 */
+footer {
+  height: 50px;
+  background-color: #aaa;
+}
+
+/* 以下レスポンシブ対応設定 */
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+ }
+
+ .step-box{
+   width: 90%;
+   margin: 0 auto 20px;
+ }
+
+ .step-image {
+  height: 150px;
+  max-width: 425px;
+  width: 100%;
+  text-align: center;
+  margin:0 auto;
+}
+}
